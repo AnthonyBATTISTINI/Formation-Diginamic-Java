@@ -17,7 +17,7 @@ public class Pizza {
 	}
 	public Pizza(int id, String code, String libelle, double prix) {
 		if(id >= Pizza.nextId)
-			nextId = id + 1;
+			Pizza.nextId = id + 1;
 		this.id = id;
 		this.code = code;
 		this.libelle = libelle;
